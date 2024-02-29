@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Theme</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/df952964cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sclstyle.css" />
+
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="sclheaderwrap">
+        <div class="row firstheaderrow">
+            <div class="col-lg-3 mobhide">
+                <span><i class="fa-solid fa-mobile-screen-button"></i> <a href="#"> +1 376-236-2336</a></span>
+            </div>
+            <div class="col-lg-3 mobhide">
+                <span><i class="fa-regular fa-envelope"></i> <a href="#">info@stylemixthemes.com</a></span>
+            </div>
+            <div class="col-lg-3 mobhide">
+                <span><i class="fa-regular fa-clock"></i> Mon — Fri: 8.00 AM — 6.00 PM</span>
+            </div>
+            <div class="col-12 col-lg-3">
+                <form class="d-flex" style="height: 32px;">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" style="border-radius: unset !important;" />
+                    <button class="input-group-text border-0" id="search-addon" style="border-radius: unset !important;">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="row secondheaderrow">
+            <div class="col-6 col-lg-2">
+                <img src="./assets/scllogo.png" alt="headerlogo"/>
+            </div>
+            <div class="col-6 col-lg-10">
+                <!-- school web menu -->
+                <div class="sclwebmenu" style="text-align: right;">
+                    <div class="btn-group shadow-0 navbtns headhide" role="group">
+                        <button type="button" class="btn" data-mdb-color="dark"><a href="./sclhome.html">Home</a></button>
+                        <button type="button" class="btn" data-mdb-color="dark"><a href="./aboutus.html">About Us</a></button>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Education
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="./education.html">Kindergarden</a></li>
+                                <li><a class="dropdown-item" href="./education.html">Pre School</a></li>
+                                <li><a class="dropdown-item" href="./education.html">Elementary School</a></li>
+                                <li><a class="dropdown-item" href="./education.html">Middle School</a></li>
+                                <li><a class="dropdown-item" href="./education.html">High School</a></li>
+                                <li><a class="dropdown-item" href="./education.html">University Admission</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn" data-mdb-color="dark"><a href="#">Our Campus</a></button>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Admission
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="#">Admission Process</a></li>
+                                <li><a class="dropdown-item" href="#">Admission Fees</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn" data-mdb-color="dark"><a href="#">News&Events</a></button>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- school mobile menu -->
+                <div class="sclmobmenu" style="text-align: right;">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasMobMenu" aria-controls="offcanvasMobMenu">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <div class="offcanvas offcanvas-end offcanvasstyle" tabindex="-1" id="offcanvasMobMenu"
+                        aria-labelledby="offcanvasMobMenuLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <h3 class="offcanvas-title" id="offcanvasMobMenuLabel">Smarty Kindergarten</h3>
+                        <div class="offcanvas-body">
+                            <div class="mobmenulist">
+                                <li><a href="./sclhome.html">Home</a></li>
+                                <li><a href="./aboutus.html">About Us</a></li>
+                                <div class="accordion">
+                                    <div class="accordion-item">
+                                      <p class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Education
+                                        </button>
+                                    </p>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <li><a href="./education.html">Kindergarden</a></li>
+                                            <li><a href="./education.html">Pre School</a></li>
+                                            <li><a href="./education.html">Elementary School</a></li>
+                                            <li><a href="./education.html">Middle School</a></li>
+                                            <li><a href="./education.html">High School</a></li>
+                                            <li><a href="./education.html">University Admission</a></li>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <li><a href="#">Our Campus</a></li>
+                                <li><a href="#">Admission</a></li>
+                                <li><a href="#">News & Events</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </div>
+                            <div class="headcontactlist">
+                                <li><i class="fa-solid fa-mobile-screen-button"></i> <a href="#"> +1 376-236-2336</a></li>
+                                <li><i class="fa-regular fa-envelope"></i> <a href="#">info@stylemixthemes.com</a></li>
+                                <li><i class="fa-regular fa-clock"></i> Mon — Fri: 8.00 AM — 6.00 PM</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sclbannerdiv" style="background-image: url(./assets/school.jpg); position: relative;">
+        <div class="overlay">
+          <div class="bannercontent">
+            <h1>Kindergarden</h1>
+          </div>
+        </div>
+    </div>
+
+    <div class="educationbody">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="educationcontloop">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="edctncontentimg">
+                        <img src="./assets/blog1.jpg" alt="school" width="100%" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="edctncontentdiv">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 edctnmob">
+                    <div class="edctncontentimg">
+                        <img src="./assets/school4.jpg" alt="school" width="100%" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="edctncontentdiv">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 edctnweb">
+                    <div class="edctncontentimg">
+                        <img src="./assets/school4.jpg" alt="school" width="100%" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="edctncontentimg">
+                        <img src="./assets/blog2.jpg" alt="school" width="100%" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="edctncontentdiv">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <div class="latestnews">
+        <div class="row latestnewstitle">
+            <div class="col-12 col-sm-8">
+                <h1>LATEST HAPPENINGS</h1>
+            </div>
+            <div class="col-12 col-sm-4 newsbtn">
+                <span><a href="#">View All &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></i></a></span>
+            </div>
+        </div>
+
+        <div class="owl-carousel owl-theme owl-carousel-latestnews">
+            <div class="item">
+                <a href="#">
+                    <div class="imazezoom">                             
+                        <img src="./assets/blog.jpg" alt="asset">
+                        <div class="newsoverlay"> 
+                            <div class="newscontent">
+                              <p>Date</p>
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="imazezoom">                             
+                        <img src="./assets/blog1.jpg" alt="asset">
+                        <div class="newsoverlay"> 
+                            <div class="newscontent">
+                              <p>Date</p>
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="imazezoom">                             
+                        <img src="./assets/blog2.jpg" alt="asset">
+                        <div class="newsoverlay"> 
+                            <div class="newscontent">
+                              <p>Date</p>
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="imazezoom">                             
+                        <img src="./assets/school.jpg" alt="asset">
+                        <div class="newsoverlay"> 
+                            <div class="newscontent">
+                              <p>Date</p>
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="imazezoom">                             
+                        <img src="./assets/school1.jpg" alt="asset">
+                        <div class="newsoverlay"> 
+                            <div class="newscontent">
+                              <p>Date</p>
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="imazezoom">                             
+                        <img src="./assets/school3.jpg" alt="asset">
+                        <div class="newsoverlay"> 
+                            <div class="newscontent">
+                              <p>Date</p>
+                              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerbody">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Main Menu</h5>
+                    <div class="footercont">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News & Blogs</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>USEFUL LINKS</h5>
+                    <div class="footercont">
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Superior</a></li>
+                        <li><a href="#">Deluxe</a></li>
+                        <li><a href="#">Master</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>CONTACT</h5>
+                    <div class="footercont">
+                        <li><strong>Address:</strong> 9863 - 9867 Mill Road, Cambridge, MG09 99HT</li>
+                        <li><strong>Phone:</strong> +1 800 603 6035</li>
+                        <li><strong>Email:</strong> mail@companyname.com</li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a> 
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/owlcarousel.js"></script>
+
+</body>
+
+</html>
