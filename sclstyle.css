@@ -95,6 +95,10 @@ h3 {
     color: white;
   }
 
+  .mobmenubar i{
+    color: black;
+  }
+
   .sclmobmenu li {
     list-style-type: none;
     margin-bottom: 10px;
@@ -425,7 +429,7 @@ h3 {
   .sclfeature {
     padding: 100px 80px 100px 80px;
   }
-  .sclfeatu033730esptn{
+  .sclfeaturedesptn{
     margin-top: 50px;
   }
   .awardssection{
@@ -446,7 +450,7 @@ h3 {
   }
   .sclintro p,
   .educationctgry p,
-  .sclfeatu033730esptn p {
+  .sclfeaturedesptn p {
     text-align: justify;
   }
   .sclfeature {
@@ -783,6 +787,9 @@ h3 {
 @media only screen and (max-width: 700px) {
   .educationbody {
     padding: 80px 50px 40px 50px;
+  }
+  .educationbody p{
+    text-align: justify;
   }
 }
 
