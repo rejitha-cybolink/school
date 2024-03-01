@@ -166,11 +166,50 @@
         </div>
     </div>
 
+    <div class="row campusbody">
+        <div class="col-12">
+            <select id="campusDropdown" onchange="openmobCampusTab()">
+                <option value="student-life" selected>Student Life</option>
+                <option value="campus-content">Campus Content</option>
+                <option value="campus-content-1">Campus Content One</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <div class="campustab">
+                <button class="campustablinks" onclick="openCampusTab(event, 'student-life')" id="defaultOpen">Student Life</button>
+                <button class="campustablinks" onclick="openCampusTab(event, 'campus-content')">Campus Content</button>
+                <button class="campustablinks" onclick="openCampusTab(event, 'campus-content-1')">Campus Content One</button>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-9">
+            <div id="student-life" class="campustabcontent">
+                <h2>Student Life</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+              
+            <div id="campus-content" class="campustabcontent" style="display: none;">
+                <h2>Campus Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
+            </div>
+              
+            <div id="campus-content-1" class="campustabcontent" style="display: none;">
+                <h2>Campus Content One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>      
+    </div>
+    
 
     <div class="latestnews">
         <div class="row latestnewstitle">
             <div class="col-12 col-sm-8">
-                <h1>LATEST HAPPENINGS</h1>
+                <h1>Campus Facilities</h1>
             </div>
             <div class="col-12 col-sm-4 newsbtn">
                 <span><a href="#">View All &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></i></a></span>
@@ -299,6 +338,38 @@
             <p>Copyright © 2023. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function openmobCampusTab() {
+            var dropdown = document.getElementById("campusDropdown");
+            var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+            var campustabcontent = document.getElementsByClassName("campustabcontent");
+            for (var i = 0; i < campustabcontent.length; i++) {
+                campustabcontent[i].style.display = "none";
+            }
+            document.getElementById(selectedOption).style.display = "block";
+        }
+
+    </script>
+
+
+    <script>
+        function openCampusTab(evt, cityName) {
+          var i, campustabcontent, campustablinks;
+          campustabcontent = document.getElementsByClassName("campustabcontent");
+          for (i = 0; i < campustabcontent.length; i++) {
+            campustabcontent[i].style.display = "none";
+          }
+          campustablinks = document.getElementsByClassName("campustablinks");
+          for (i = 0; i < campustablinks.length; i++) {
+            campustablinks[i].className = campustablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        document.getElementById("defaultOpen").click();
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
